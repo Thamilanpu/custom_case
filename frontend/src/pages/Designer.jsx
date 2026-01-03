@@ -334,9 +334,9 @@ const Designer = () => {
     return (
         <div className="mx-auto flex max-w-6xl flex-col gap-8 px-4 py-8">
             <div className="rounded-3xl bg-white p-6 shadow-sm">
-                <div className="flex flex-col gap-6 md:flex-row md:items-start">
-                    <div className="flex-1 space-y-4">
-                        <h1 className="text-2xl font-semibold text-slate-800">Design your cover</h1>
+                <div className="flex flex-col-reverse gap-8 md:flex-row md:items-start">
+                    <div className="flex-1 space-y-6">
+                        <h1 className="text-2xl font-semibold text-slate-800 hidden md:block">Design your cover</h1>
 
                         {/* ⭐ ADDED PRICE DISPLAY */}
                         {selectedModel && (
@@ -444,9 +444,14 @@ const Designer = () => {
                         </button>
                     </div>
 
-                    <div className="flex flex-1 justify-center">
-                        <div className="rounded-[32px] border border-slate-200 bg-slate-900/5 p-4">
-                            <canvas ref={canvasEl} width={300} height={500} />
+                    <div className="flex flex-1 flex-col items-center justify-center">
+                        <h1 className="mb-4 text-2xl font-semibold text-slate-800 md:hidden">Design your cover</h1>
+                        <div className="relative w-full flex justify-center overflow-hidden">
+                            <div className="transform scale-[0.85] sm:scale-100 origin-top transition-transform">
+                                <div className="rounded-[32px] border border-slate-200 bg-slate-900/5 p-4">
+                                    <canvas ref={canvasEl} width={300} height={500} />
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>

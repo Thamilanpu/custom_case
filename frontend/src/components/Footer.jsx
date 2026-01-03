@@ -24,9 +24,9 @@ const Footer = () => {
         <div className="absolute bottom-0 right-0 w-80 h-80 bg-pink-600/20 rounded-full blur-3xl"></div>
       </div>
 
-      <div className="relative max-w-7xl mx-auto px-6 py-20 lg:px-8">
+      <div className="relative max-w-7xl mx-auto px-6 py-12 md:py-20 lg:px-8">
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-12 lg:gap-16">
 
           {/* Brand & Love Message */}
           <div className="space-y-6">

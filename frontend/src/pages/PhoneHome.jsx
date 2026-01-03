@@ -12,6 +12,7 @@ const PhoneHome = () => {
     <div>
         <Hero/>
             <PhoneModelSelector/>
+            {/* <CategoryShowcase/> */}
               <FeaturedProducts/>
               <Testimonials/>
               <GallerySection/>
